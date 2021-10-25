@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Update Member Profile</title>
+		<style type = "text/css">
+		  body{background-color:Aquamarine; font-family:Arial; text-align:center;}
+		  legend{font-weight:bold;}
+		  label{padding-bottom:10px; width:100px;}
+		  form{text-align:center; display:inline-block;}
+		  fieldset{ margin:10px; padding:20px;}
+		</style>
+	</head>
+	<body>
+		<h1>Update Member Profile</h1>
+		<form action="update.php" method="post">
+			<label>Username: </label>
+			<input type="text" name="username"/> 
+			<label>Password: </label>
+			<input type="text" name="password"/>
+			<br />
+			<br />
+			<label>First Name: </label>
+			<input type="text" name="fname"/>
+			<label>Middle Initial: </label>
+			<input type="text" name="mname"/>
+			<label>Last Name: </label>
+			<input type="text" name="lname"/>
+			<br />
+			<br />
+			<label>Email: </label>
+			<input type="email" name="email"/>
+			<br />
+			<br />
+			<input type="submit" value="update" id="submit" style="background-color:PowderBlue; padding:5px; align:center; font-size:20px;"/>
+		</form>
+		<br /><br />
+		<br /><br />
+		
+	</body>
+</html>

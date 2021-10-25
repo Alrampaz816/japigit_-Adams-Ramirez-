@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Php Practice Page!</title>
+    <style type = "text/css">
+      body{background-color:Aquamarine; font-family:Arial; text-align:center;}
+      legend{font-weight:bold;}
+      label{padding-bottom:10px; width:100px;}
+      form{text-align:left; display:inline-block;}
+      fieldset{ margin:10px; padding:20px;}
+    </style>
+	
+  </head>
+  <body>
+    <h1>Form to Database with Php!</h1>
+    <form action="connection.php" method="post" >
+      <div>
+        <fieldset>
+          <legend>Login Information</legend>
+          <label>Username: </label>
+          <input type="text" name="username"/> 
+		  <p id= "usrErr"></p>
+          <br /><br />
+          <label>Password: </label>
+          <input type="password" name="password"/>
+		  <p id = "pswdErr"></p>
+  
+          
+        </fieldset>
+      </div>
+      <div>
+        <fieldset>
+          <legend>Profile Information</legend>
+          <label>First Name: </label>
+          <input type="text" name="fname"/>
+          <label>Middle Name: </label>
+          <input type="text" name="mname"/>
+          <label>Last Name: </label>
+          <input type="text" name="lname"/>
+		  <p id = "lnameErr"></p>
+          <br /><br/>
+          <label>Email: </label>
+          <input type="email" name="email"/>
+		  <p id = "emailErr"></p>
+          <br /> <br />
+          <label>Company Name: </label>
+          <input type="text" name="companyName"/>
+          <label>Company Type: </label>
+          <input type="radio" name="companyType" value="testLab"/>Test Lab
+          <input type="radio" name="companyType" value="manufacturer"/>Manufacturer
+          <br /> <br />
+          <h3>Contact Information</h3>
+          <label>Address:  </label>
+          <input type="text" name="address"/>
+          <label>City:  </label>
+          <input type="text" name="city"/>
+          <label>State:  </label>
+          <input type="text" name="state"/>
+          <label>Zipcode:  </label>
+          <input type="text" name="zip"/>
+          <br /><br />
+          <label>Office Phone:  </label>
+          <input type="text" name="office"/>
+          <label>Cell Phone:  </label>
+          <input type="text" name="cell"/>    
+        </fieldset>
+        <br /><br />
+        <input type="submit" value="Register" id="submit" style="background-color:PowderBlue; padding:5px; align:center; font-size:20px; margin-left:40%;"/>
+      </div>
+    </form>
+	<h2>Already a Member?<h2>
+	<button onclick="window.location.href='checkUser_READ.html';">
+      Click Here
+    </button>
+    
+  </body>
+  
+</html>
